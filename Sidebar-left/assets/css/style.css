@@ -1,0 +1,98 @@
+.sidebar {
+    height: 100vh;
+    width: 140px;  
+    background-color: #2c3e50; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative;  
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.move-sidebar {
+    transform: translateX(-101px); 
+}
+
+.sidebar ul {
+    list-style: none;
+    font-size: 35px; 
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.sidebar .icon {  
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.sidebar .icon i {
+    color: white;
+    font-size: 35px;  
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+ 
+.sidebar .open-icon {
+    font-size: 50px; 
+}
+
+
+.sidebar .icon i:hover { 
+    transform: scale(1.5);  
+}
+
+.sidebar ul li {
+    line-height: 70px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.sidebar ul li i {
+    font-size: 50px; 
+}
+
+ 
+.sidebar ul li:nth-child(1) {
+    transform-origin: top left;
+}
+.sidebar ul li:nth-child(2) {
+    transform-origin: top right;
+}
+.sidebar ul li:nth-child(3) {
+    transform-origin: bottom left;
+}
+.sidebar ul li:nth-child(4) {
+    transform-origin: bottom right;
+}
+.sidebar ul li:nth-child(5) {
+    transform-origin: center left;
+}
+.sidebar ul li:nth-child(6) {
+    transform-origin: center right;
+}
+
+ 
+.sidebar ul li:hover {
+    transform: scale(1.2) rotate(15deg); 
+    color: #ffc107;  
+}
+
+
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar ul li a:hover {  
+    color: rgb(255, 255, 255);
+}
+
+.open-icon:hover,
+.close-icon:hover {
+    color: rgb(255, 255, 255); 
+}
